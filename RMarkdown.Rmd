@@ -1,0 +1,29 @@
+---
+# title: "Train"
+# author: "Satoshi"
+# date: '2022-06-20'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+## 売上高(全社)
+
+```{r, echo=FALSE}
+g <- ggplot(data=iris)
+g <- g + geom_point(aes(x=Sepal.Length, y=Sepal.Width, color=Species))
+g
+```
+
+### 過去実績
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
